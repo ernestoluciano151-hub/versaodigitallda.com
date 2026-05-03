@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Logótipos, manual de marca, brindes corporativos e design gráfico profissional em Luanda, Angola. Versão Digital.">
+<link rel="canonical" href="https://www.versaodigitallda.com/design.html">
+<meta property="og:title" content="Design & Identidade Visual · Versão Digital · Luanda Angola">
+<meta property="og:description" content="Logótipos, manual de marca, brindes corporativos e design gráfico profissional em Luanda, Angola. Versão Digital.">
+<title>Design & Identidade Visual · Versão Digital · Luanda Angola</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --g1:#B8862A;--g2:#D4A843;--g3:#F0C96A;
+  --gb:#FDF6E8;--gm:#F5E6C0;--cr:#FEFCF5;--cr2:#F7F0DC;
+  --dk:#1A1208;--dk2:#2C1F08;
+  --t1:#2C1F08;--t2:#7A6540;--t3:#A08B60;
+  --bd:#E8D5A0;--bd2:#D4BC7A;
+  --sh:0 4px 32px rgba(184,134,42,.10);
+}
+html{scroll-behavior:smooth}
+body{font-family:'Raleway',sans-serif;background:var(--cr);color:var(--t1);overflow-x:hidden;line-height:1.65}
+h1,h2,h3{font-family:'Playfair Display',serif;color:var(--dk)}
+a{text-decoration:none}
+
+/* NAV */
+nav{position:fixed;top:0;width:100%;z-index:200;height:68px;padding:0 2.5rem;display:flex;align-items:center;justify-content:space-between;background:rgba(254,252,245,.96);backdrop-filter:blur(16px);border-bottom:1px solid var(--bd);transition:box-shadow .3s}
+.logo{font-family:'Playfair Display',serif;font-size:1.1rem;font-weight:700;letter-spacing:.08em;color:var(--dk)}
+.logo em{color:var(--g1);font-style:normal}
+.nav-links{display:flex;gap:0;list-style:none;align-items:center}
+.nav-links li{position:relative}
+.nav-links li a{display:block;padding:.5rem 1rem;font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;color:var(--t2);font-weight:500;transition:color .2s}
+.nav-links li a:hover,.nav-links li a.active{color:var(--g1)}
+.nav-links li.drop:hover .submenu{display:block}
+.submenu{display:none;position:absolute;top:100%;left:0;background:#fff;border:1px solid var(--bd);border-radius:8px;min-width:210px;padding:.5rem 0;box-shadow:var(--sh);z-index:300}
+.submenu a{padding:.7rem 1.2rem;font-size:.78rem;color:var(--t2);display:block;letter-spacing:.05em;text-transform:none;font-weight:400}
+.submenu a:hover{background:var(--gb);color:var(--g1)}
+.nav-cta{background:var(--g1);color:#fff;padding:.5rem 1.4rem;font-size:.67rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;border-radius:2px;transition:background .2s;white-space:nowrap;margin-left:1rem}
+.nav-cta:hover{background:var(--dk2)}
+.hbg{display:none;background:none;border:none;cursor:pointer;font-size:1.4rem;color:var(--dk)}
+.mob{display:none;position:fixed;top:68px;left:0;right:0;background:var(--cr);border-top:1px solid var(--bd);padding:1.2rem 1.5rem;z-index:199;flex-direction:column;gap:.5rem;box-shadow:0 8px 24px rgba(44,31,8,.08)}
+.mob.open{display:flex}
+.mob a{color:var(--t2);font-size:.78rem;letter-spacing:.15em;text-transform:uppercase;padding:.55rem 0;border-bottom:1px solid var(--bd)}
+
+/* HERO */
+#hero{min-height:100vh;padding-top:68px;display:flex;align-items:center;justify-content:center;text-align:center;position:relative;overflow:hidden;background:linear-gradient(155deg,#FEFCF5 0%,#F5EDD0 55%,#F0E8C4 100%)}
+.hdeco{position:absolute;border-radius:50%;pointer-events:none}
+.hd1{width:640px;height:640px;border:1px solid rgba(184,134,42,.1);top:50%;left:50%;transform:translate(-50%,-50%)}
+.hd2{width:420px;height:420px;border:1px solid rgba(184,134,42,.16);top:50%;left:50%;transform:translate(-50%,-50%)}
+.hd3{width:200px;height:200px;background:radial-gradient(circle,rgba(212,168,67,.1),transparent);top:50%;left:50%;transform:translate(-50%,-50%)}
+.hero-content{position:relative;z-index:2;max-width:860px;padding:2rem}
+.eyebrow{display:inline-flex;align-items:center;gap:.8rem;font-size:.63rem;letter-spacing:.4em;text-transform:uppercase;color:var(--g1);margin-bottom:2rem;font-weight:600}
+.eyebrow::before,.eyebrow::after{content:'';width:28px;height:1px;background:var(--g2)}
+#hero h1{font-size:clamp(2.8rem,6.5vw,5.2rem);font-weight:900;line-height:1.05;letter-spacing:-.015em;margin-bottom:1.4rem}
+#hero h1 em{color:var(--g1);font-style:italic}
+.hsub{font-size:.8rem;letter-spacing:.28em;text-transform:uppercase;color:var(--t2);margin-bottom:2.8rem}
+.hbtns{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap}
+.btn-g{background:var(--g1);color:#fff;padding:.9rem 2.2rem;font-size:.72rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;border-radius:2px;transition:background .2s,transform .15s;display:inline-block}
+.btn-g:hover{background:var(--dk2);transform:translateY(-2px)}
+.btn-o{border:1.5px solid var(--g1);color:var(--g1);padding:.85rem 2.2rem;font-size:.72rem;font-weight:600;letter-spacing:.2em;text-transform:uppercase;border-radius:2px;transition:all .2s;display:inline-block}
+.btn-o:hover{background:var(--gb)}
+.scroll-h{position:absolute;bottom:2rem;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:.4rem;color:var(--t3);font-size:.6rem;letter-spacing:.28em;text-transform:uppercase}
+.scroll-line{width:1px;height:32px;background:linear-gradient(to bottom,var(--g2),transparent)}
+
+/* SECTIONS */
+.sec{padding:6rem 2rem}
+.wrap{max-width:1080px;margin:0 auto}
+.stag{display:flex;align-items:center;gap:.8rem;margin-bottom:1rem}
+.stag span{font-size:.6rem;letter-spacing:.38em;text-transform:uppercase;color:var(--g1);font-weight:600}
+.stag::before{content:'◆';color:var(--g1);font-size:.58rem}
+.stag::after{content:'';flex:1;height:1px;background:linear-gradient(to right,var(--bd2),transparent)}
+.sh2{font-size:clamp(1.9rem,3.5vw,2.9rem);margin-bottom:.8rem;line-height:1.15}
+.slead{color:var(--t2);font-weight:300;font-size:.97rem;max-width:580px;margin-bottom:3rem}
+
+/* GRID */
+.grid-3{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.5rem}
+.card{background:#fff;border:1px solid var(--bd);border-radius:10px;padding:2rem;transition:box-shadow .3s,border-color .3s,transform .2s;cursor:default}
+.card:hover{border-color:var(--g2);box-shadow:var(--sh);transform:translateY(-4px)}
+.card-n{font-family:'Playfair Display',serif;font-size:2.8rem;font-weight:900;color:rgba(184,134,42,.12);line-height:1;margin-bottom:.3rem}
+.card-ico{font-size:2rem;display:block;margin-bottom:.7rem}
+.card h3{font-size:1rem;font-family:'Raleway',sans-serif;font-weight:700;margin-bottom:.5rem}
+.card p{color:var(--t2);font-size:.85rem;line-height:1.7;font-weight:300}
+
+/* STEPS */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:0}
+.step{padding:2.5rem 1.8rem;border-right:1px solid var(--bd)}
+.step:last-child{border:none}
+.step-n{width:48px;height:48px;border-radius:50%;background:var(--gb);border:1.5px solid var(--g2);display:flex;align-items:center;justify-content:center;margin-bottom:1.2rem}
+.step-n span{font-family:'Playfair Display',serif;font-weight:700;color:var(--g1);font-size:1rem}
+.step h3{font-size:.95rem;font-family:'Raleway',sans-serif;font-weight:700;margin-bottom:.4rem}
+.step p{font-size:.83rem;color:var(--t2);font-weight:300;line-height:1.7}
+
+/* PRICING */
+.pgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.5rem}
+.pc{background:#fff;border:1.5px solid var(--bd);border-radius:10px;padding:2.5rem 2rem;position:relative;transition:box-shadow .3s}
+.pc:hover{box-shadow:var(--sh)}
+.pc.feat{border-color:var(--g1);background:linear-gradient(160deg,#FFFCF0,#FFF8E6)}
+.feat-tag{position:absolute;top:-1px;left:50%;transform:translateX(-50%);background:var(--g1);color:#fff;padding:.3rem 1.4rem;font-size:.6rem;letter-spacing:.25em;text-transform:uppercase;font-weight:700;border-radius:0 0 6px 6px;white-space:nowrap}
+.pn{font-size:.68rem;letter-spacing:.3em;text-transform:uppercase;color:var(--t2);font-weight:600;margin-bottom:.5rem;margin-top:.3rem}
+.pv{font-family:'Playfair Display',serif;font-size:1.9rem;font-weight:700;margin-bottom:.15rem}
+.pp{font-size:.72rem;color:var(--t3);margin-bottom:1.5rem}
+.pdiv{height:1px;background:var(--bd);margin-bottom:1.2rem}
+.pl{list-style:none;display:flex;flex-direction:column;gap:.5rem;margin-bottom:1.8rem}
+.pl li{font-size:.83rem;color:var(--t2);display:flex;align-items:flex-start;gap:.6rem}
+.pl li::before{content:'◆';color:var(--g1);font-size:.52rem;margin-top:.3rem;flex-shrink:0}
+.pbtn{display:block;text-align:center;padding:.85rem;font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;font-weight:700;border-radius:4px;cursor:pointer;border:none;font-family:'Raleway',sans-serif;transition:all .2s;width:100%}
+.pbtn.out{background:transparent;border:1.5px solid var(--bd2);color:var(--t2)}
+.pbtn.out:hover{border-color:var(--g1);color:var(--g1);background:var(--gb)}
+.pbtn.sol{background:var(--g1);color:#fff}
+.pbtn.sol:hover{background:var(--dk2)}
+
+/* FAQ */
+.faq-item{border:1px solid var(--bd);border-radius:8px;margin-bottom:.8rem;background:#fff;overflow:hidden}
+.faq-q{padding:1.1rem 1.4rem;font-size:.9rem;font-weight:600;cursor:pointer;display:flex;justify-content:space-between;align-items:center;color:var(--dk);transition:background .2s;user-select:none}
+.faq-q:hover,.faq-q.open{background:var(--gb);color:var(--g1)}
+.faq-a{display:none;padding:0 1.4rem 1.1rem;font-size:.86rem;color:var(--t2);line-height:1.75;font-weight:300}
+.faq-a.open{display:block}
+
+/* CTA BAR */
+.cta-bar{background:var(--dk);padding:5rem 2rem;text-align:center}
+.cta-bar h2{color:var(--g2);font-size:clamp(1.8rem,3.5vw,2.8rem);margin-bottom:.8rem}
+.cta-bar p{color:rgba(253,246,232,.45);max-width:480px;margin:0 auto 2.2rem;font-weight:300}
+
+/* FOOTER */
+footer{background:var(--dk2);padding:3.5rem 2rem 2rem}
+.fi{max-width:1080px;margin:0 auto;display:grid;grid-template-columns:2fr 1fr 1fr;gap:3rem;margin-bottom:2.5rem}
+.fb .flogo{font-family:'Playfair Display',serif;font-size:1.2rem;font-weight:700;color:rgba(253,246,232,.9)}
+.fb .flogo em{color:var(--g3);font-style:normal}
+.fb p{color:rgba(253,246,232,.4);font-size:.82rem;margin-top:.8rem;max-width:250px;line-height:1.7;font-weight:300}
+.fcol h4{font-size:.6rem;letter-spacing:.3em;text-transform:uppercase;color:var(--g3);font-weight:700;margin-bottom:1rem}
+.fcol ul{list-style:none;display:flex;flex-direction:column;gap:.5rem}
+.fcol ul a{color:rgba(253,246,232,.4);font-size:.83rem;transition:color .2s}
+.fcol ul a:hover{color:var(--g3)}
+.socials{display:flex;gap:.7rem;margin-bottom:1.2rem}
+.sb{display:flex;align-items:center;justify-content:center;width:36px;height:36px;border:1px solid rgba(212,168,67,.25);border-radius:50%;color:rgba(253,246,232,.35);transition:all .2s}
+.sb:hover{border-color:var(--g2);color:var(--g2)}
+.sb svg{width:16px;height:16px;fill:currentColor}
+.fb2{max-width:1080px;margin:0 auto;border-top:1px solid rgba(212,168,67,.12);padding-top:1.5rem;display:flex;justify-content:space-between;flex-wrap:wrap;gap:.5rem}
+.fb2 p,.fb2 span{font-size:.7rem;color:rgba(253,246,232,.25);letter-spacing:.08em}
+
+/* ANIM */
+@keyframes up{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+.hero-content>*{animation:up .75s ease both}
+.hero-content>*:nth-child(1){animation-delay:.1s}
+.hero-content>*:nth-child(2){animation-delay:.22s}
+.hero-content>*:nth-child(3){animation-delay:.36s}
+.hero-content>*:nth-child(4){animation-delay:.5s}
+
+@media(max-width:900px){.steps{grid-template-columns:1fr 1fr}.step{border-right:none;border-bottom:1px solid var(--bd)}.step:last-child{border:none}}
+@media(max-width:768px){nav{padding:0 1.2rem}.nav-links,.nav-cta{display:none}.hbg{display:block}.fi{grid-template-columns:1fr}.sec{padding:4rem 1.2rem}.fb2{flex-direction:column;text-align:center}}
+@media(max-width:480px){.steps{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<nav id="nav">
+  <a href="index.html" class="logo"><em>VERSÃO</em> DIGITAL</a>
+  <ul class="nav-links">
+    <li><a href="index.html">Início</a></li>
+    <li class="drop">
+      <a href="#" class="active">Serviços ▾</a>
+      <ul class="submenu">
+        <li><a href="fotografia.html">📷 Fotografia</a></li>
+        <li><a href="videoclips.html">🎬 Video Clips</a></li>
+        <li><a href="design.html">✏️ Design & Branding</a></li>
+        <li><a href="edicao-video.html">✂️ Edição de Vídeo</a></li>
+      </ul>
+    </li>
+    <li><a href="index.html#pacotes">Pacotes</a></li>
+    <li><a href="index.html#contacto">Contacto</a></li>
+  </ul>
+  <a href="https://wa.me/244939183513?text=Ol%C3%A1%20Vers%C3%A3o%20Digital!" class="nav-cta" target="_blank">Orçamento Grátis</a>
+  <button class="hbg" onclick="toggleM()" aria-label="Menu">☰</button>
+</nav>
+<div class="mob" id="mob">
+  <a href="index.html" onclick="closeM()">Início</a>
+  <a href="fotografia.html" onclick="closeM()">📷 Fotografia</a>
+  <a href="videoclips.html" onclick="closeM()">🎬 Video Clips</a>
+  <a href="design.html" onclick="closeM()">✏️ Design & Branding</a>
+  <a href="edicao-video.html" onclick="closeM()">✂️ Edição de Vídeo</a>
+  <a href="index.html#pacotes" onclick="closeM()">Pacotes</a>
+  <a href="index.html#contacto" onclick="closeM()">Contacto</a>
+  <a href="https://wa.me/244939183513" class="btn-g" style="text-align:center;margin-top:.5rem;border-radius:4px" target="_blank">Orçamento Grátis</a>
+</div>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hdeco hd1"></div>
+  <div class="hdeco hd2"></div>
+  <div class="hdeco hd3"></div>
+  <div class="hero-content">
+    <div class="eyebrow">Versão Digital · Luanda, Angola</div>
+    <h1 style="color:var(--dk)">Design &<br><em>Identidade Visual</em></h1>
+    <p class="hsub" style="color:var(--t2)">Logótipos · Branding · Impressão · Brindes Corporativos</p>
+    <div class="hbtns">
+      <a href="#servicos" class="btn-g">Ver Serviços</a>
+      <a href="#precos" class="btn-o">Ver Preços</a>
+    </div>
+  </div>
+  <div class="scroll-h"><div class="scroll-line"></div><span>Scroll</span></div>
+</section>
+
+<!-- SERVIÇOS -->
+<section class="sec" id="servicos" style="background:#fff">
+  <div class="wrap">
+    <div class="stag"><span>O que Criamos</span></div>
+    <h2 class="sh2">Design & Identidade Visual</h2>
+    <p class="slead">Da ideia à marca. Criamos identidades visuais memoráveis que constroem reconhecimento de mercado em Angola e além — para empresas e marcas pessoais.</p>
+    <div class="grid-3">
+      <div class="card"><div class="card-n">01</div><span class="card-ico">✏️</span><h3>Logótipo Profissional</h3><p>3 conceitos distintos, 2 rondas de revisão e entrega em todos os formatos (AI, SVG, PNG, PDF) para uso digital e impresso.</p></div>
+      <div class="card"><div class="card-n">02</div><span class="card-ico">📖</span><h3>Manual de Identidade Visual</h3><p>Guia completo da marca: paleta de cores, tipografia, usos correctos, aplicações em papel, digital e merchandising.</p></div>
+      <div class="card"><div class="card-n">03</div><span class="card-ico">💼</span><h3>Papelaria Corporativa</h3><p>Cartão de visita, papel timbrado, envelope, pasta, assinatura de e-mail e materiais de escritório com identidade da marca.</p></div>
+      <div class="card"><div class="card-n">04</div><span class="card-ico">🎁</span><h3>Brindes Corporativos</h3><p>Design e produção de brindes com a marca da empresa: bones, camisetas, canecas, cadernos, canetas, sacos e muito mais.</p></div>
+      <div class="card"><div class="card-n">05</div><span class="card-ico">🖼️</span><h3>Templates para Redes Sociais</h3><p>Pack de 10–20 templates editáveis para posts, stories e capas no Instagram, Facebook e LinkedIn — com identidade consistente.</p></div>
+      <div class="card"><div class="card-n">06</div><span class="card-ico">📊</span><h3>Apresentações Corporativas</h3><p>Templates PowerPoint e Google Slides com identidade visual da marca para reuniões, pitches e propostas comerciais.</p></div>
+      <div class="card"><div class="card-n">07</div><span class="card-ico">🏷️</span><h3>Marca Pessoal (Personal Brand)</h3><p>Identidade visual para influencers, consultores, coaches, speakers e profissionais liberais que querem destacar-se no mercado.</p></div>
+      <div class="card"><div class="card-n">08</div><span class="card-ico">🖨️</span><h3>Design para Impressão</h3><p>Flyers, cartazes, banners, roll-ups, fachadas, embalagens, rótulos, menus e todos os materiais gráficos impressos.</p></div>
+      <div class="card"><div class="card-n">09</div><span class="card-ico">🎨</span><h3>Rebranding</h3><p>Renovação de identidade visual para marcas que precisam modernizar a imagem sem perder o reconhecimento conquistado.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" style="background:var(--cr)">
+  <div class="wrap">
+    <div class="stag"><span>Brindes Corporativos</span></div>
+    <h2 class="sh2">Personalizamos Tudo</h2>
+    <p class="slead">Produção de brindes com a identidade da sua empresa — para equipas, eventos e acções de marketing.</p>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:1rem">
+      <div style="background:#fff;border:1px solid var(--bd);border-radius:8px;padding:1.5rem;text-align:center;transition:box-shadow .3s" onmouseover="this.style.boxShadow='0 4px 20px rgba(184,134,42,.1)'" onmouseout="this.style.boxShadow='none'"><div style="font-size:2rem;margin-bottom:.5rem">🧢</div><p style="font-size:.85rem;font-weight:600;color:var(--dk)">Bones & Bonés</p><p style="font-size:.73rem;color:var(--t2)">Bordado ou DTF</p></div>
+      <div style="background:#fff;border:1px solid var(--bd);border-radius:8px;padding:1.5rem;text-align:center;transition:box-shadow .3s" onmouseover="this.style.boxShadow='0 4px 20px rgba(184,134,42,.1)'" onmouseout="this.style.boxShadow='none'"><div style="font-size:2rem;margin-bottom:.5rem">👕</div><p style="font-size:.85rem;font-weight:600;color:var(--dk)">Camisetas</p><p style="font-size:.73rem;color:var(--t2)">Serigrafia ou DTF</p></div>
+      <div style="background:#fff;border:1px solid var(--bd);border-radius:8px;padding:1.5rem;text-align:center;transition:box-shadow .3s" onmouseover="this.style.boxShadow='0 4px 20px rgba(184,134,42,.1)'" onmouseout="this.style.boxShadow='none'"><div style="font-size:2rem;margin-bottom:.5rem">☕</div><p style="font-size:.85rem;font-weight:600;color:var(--dk)">Canecas</p><p style="font-size:.73rem;color:var(--t2)">Sublimação</p></div>
+      <div style="background:#fff;border:1px solid var(--bd);border-radius:8px;padding:1.5rem;text-align:center;transition:box-shadow .3s" onmouseover="this.style.boxShadow='0 4px 20px rgba(184,134,42,.1)'" onmouseout="this.style.boxShadow='none'"><div style="font-size:2rem;margin-bottom:.5rem">📓</div><p style="font-size:.85rem;font-weight:600;color:var(--dk)">Cadernos</p><p style="font-size:.73rem;color:var(--t2)">UV / Serigrafia</p></div>
+      <div style="background:#fff;border:1px solid var(--bd);border-radius:8px;padding:1.5rem;text-align:center;transition:box-shadow .3s" onmouseover="this.style.boxShadow='0 4px 20px rgba(184,134,42,.1)'" onmouseout="this.style.boxShadow='none'"><div style="font-size:2rem;margin-bottom:.5rem">🖊️</div><p style="font-size:.85rem;font-weight:600;color:var(--dk)">Canetas</p><p style="font-size:.73rem;color:var(--t2)">Gravura laser</p></div>
+      <div style="background:#fff;border:1px solid var(--bd);border-radius:8px;padding:1.5rem;text-align:center;transition:box-shadow .3s" onmouseover="this.style.boxShadow='0 4px 20px rgba(184,134,42,.1)'" onmouseout="this.style.boxShadow='none'"><div style="font-size:2rem;margin-bottom:.5rem">🛍️</div><p style="font-size:.85rem;font-weight:600;color:var(--dk)">Sacos Tote</p><p style="font-size:.73rem;color:var(--t2)">Serigrafia</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="precos" style="background:linear-gradient(160deg,var(--gb),var(--cr))">
+  <div class="wrap">
+    <div class="stag"><span>Investimento</span></div>
+    <h2 class="sh2">Pacotes de Design</h2>
+    <p class="slead">Valores a negociar conforme o projecto. Orçamentos personalizados sem compromisso.</p>
+    <div class="pgrid">
+      <div class="pc"><p class="pn">Identidade Base</p><div class="pv">A Negociar</div><p class="pp">start-ups e freelancers</p><div class="pdiv"></div><ul class="pl"><li>Logótipo (3 conceitos + 2 rev.)</li><li>Manual de marca básico</li><li>Cartão de visita</li><li>Assinatura de e-mail</li><li>Ficheiros: AI, SVG, PNG, PDF</li><li>Entrega em 10 dias úteis</li></ul><button class="pbtn out" onclick="openWA('Identidade Visual Base')">Pedir Orçamento</button></div>
+      <div class="pc feat"><div class="feat-tag">★ Mais Escolhido</div><p class="pn" style="margin-top:.9rem">Identidade Completa</p><div class="pv" style="color:var(--g1)">A Negociar</div><p class="pp">empresas estabelecidas</p><div class="pdiv"></div><ul class="pl"><li>Logótipo (3 conceitos + 3 rev.)</li><li>Manual de identidade completo</li><li>Papelaria corporativa completa</li><li>Pack templates redes sociais</li><li>Apresentação corporativa</li><li>Todos os formatos</li></ul><button class="pbtn sol" onclick="openWA('Identidade Visual Completa')">Pedir Orçamento</button></div>
+      <div class="pc"><p class="pn">Brindes Corporativos</p><div class="pv">A Negociar</div><p class="pp">design + produção</p><div class="pdiv"></div><ul class="pl"><li>Design personalizado por peça</li><li>Mockups de aprovação</li><li>Ficheiros para impressão</li><li>Apoio na escolha do fornecedor</li><li>Acompanhamento da produção</li><li>Orçamento por quantidade</li></ul><button class="pbtn out" onclick="openWA('Brindes Corporativos Personalizados')">Pedir Orçamento</button></div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<div class="cta-bar">
+  <div class="wrap">
+    <div class="stag" style="justify-content:center;margin-bottom:1.5rem"><span style="color:var(--g3)">Agende a Sua Sessão</span></div>
+    <h2>Pronto para Criar<br><em style="color:var(--g2);font-style:italic">Imagens Memoráveis?</em></h2>
+    <p>Contacte-nos hoje e receba um orçamento personalizado.</p>
+    <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap">
+      <a href="https://wa.me/244939183513?text=Ol%C3%A1!%20Quero%20agendar%20uma%20sess%C3%A3o%20fotogr%C3%A1fica." class="btn-g" target="_blank">Agendar via WhatsApp</a>
+      <a href="index.html#contacto" class="btn-o" style="border-color:rgba(212,168,67,.35);color:rgba(253,246,232,.55)">Enviar Mensagem</a>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="fi">
+    <div class="fb">
+      <a href="index.html" class="flogo"><em>VERSÃO</em> DIGITAL</a>
+      <p>Criatividade, estratégia e imagem ao serviço da sua marca. Luanda, Angola · 2026.</p>
+      <p style="font-size:.68rem;letter-spacing:.16em;color:var(--g3);margin-top:.8rem;text-transform:uppercase">Transformamos marcas em referências.</p>
+    </div>
+    <div class="fcol">
+      <h4>Serviços</h4>
+      <ul>
+        <li><a href="fotografia.html">📷 Fotografia</a></li>
+        <li><a href="videoclips.html">🎬 Video Clips</a></li>
+        <li><a href="design.html">✏️ Design & Branding</a></li>
+        <li><a href="edicao-video.html">✂️ Edição de Vídeo</a></li>
+        <li><a href="index.html#servicos">Todos os Serviços</a></li>
+      </ul>
+    </div>
+    <div class="fcol">
+      <h4>Redes Sociais</h4>
+      <div class="socials">
+        <a href="https://www.instagram.com/versaodigitallda" target="_blank" rel="noopener" class="sb" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg></a>
+        <a href="https://www.facebook.com/share/18ZgsbAdVi/" target="_blank" rel="noopener" class="sb" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+        <a href="https://www.tiktok.com/@verso.digital.lda" target="_blank" rel="noopener" class="sb" aria-label="TikTok"><svg viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5.8 20.1a6.34 6.34 0 0 0 10.86-4.43V8.93a8.16 8.16 0 0 0 4.77 1.52V7a4.85 4.85 0 0 1-1.84-.31z"/></svg></a>
+      </div>
+      <h4 style="margin-top:.8rem">Contacto</h4>
+      <p style="color:rgba(253,246,232,.4);font-size:.82rem;line-height:2;margin-top:.4rem">
+        +244 939 183 513<br>
+        geral@versaodigitallda.com<br>
+        <a href="https://www.versaodigitallda.com" style="color:var(--g3)">versaodigitallda.com</a>
+      </p>
+    </div>
+  </div>
+  <div class="fb2">
+    <p>© 2026 Versão Digital · <a href="https://www.versaodigitallda.com" style="color:rgba(253,246,232,.22)">versaodigitallda.com</a></p>
+    <span>Todos os direitos reservados</span>
+  </div>
+</footer>
+
+<script>
+function toggleM(){document.getElementById('mob').classList.toggle('open')}
+function closeM(){document.getElementById('mob').classList.remove('open')}
+function openWA(svc){window.open('https://wa.me/244939183513?text='+encodeURIComponent('Olá Versão Digital! Quero saber mais sobre '+svc+'. Podem enviar informações?'),'_blank')}
+function faq(el){el.classList.toggle('open');el.nextElementSibling.classList.toggle('open')}
+window.addEventListener('scroll',()=>{document.getElementById('nav').style.boxShadow=window.scrollY>40?'0 2px 20px rgba(184,134,42,.15)':'none'})
+document.querySelectorAll('a[href^="#"]').forEach(a=>{a.addEventListener('click',e=>{const t=document.querySelector(a.getAttribute('href'));if(t){e.preventDefault();window.scrollTo({top:t.getBoundingClientRect().top+scrollY-68,behavior:'smooth'})}closeM()})})
+</script>
+</body>
+</html>
