@@ -39,7 +39,10 @@
      5. Substitua os 3 valores abaixo e o site fica pronto.
      ══════════════════════════════════════════════════════════ -->
 <script>
-  // Web3Forms — substitua pela sua Access Key (web3forms.com)
+  /* ── Web3Forms — Formulário de contacto ──────────────────────
+     Chave configurada para: geral@versaodigitallda.com
+     Serviço: web3forms.com (250 emails/mês grátis, sem limite de domínio)
+  ─────────────────────────────────────────────────────────── */
   const WEB3FORMS_KEY = "b1282a18-9597-4fd5-8c06-d66d0a70b3dd";
 </script>
 
@@ -57,6 +60,11 @@
   --shadow2:0 2px 12px rgba(44,31,8,.07);
 }
 html{scroll-behavior:smooth}
+.has-drop{position:relative}
+.has-drop:hover .ddrop{display:block !important}
+.ddrop{display:none;position:absolute;top:100%;left:0;background:#fff;border:1px solid var(--border);border-radius:8px;min-width:210px;padding:.5rem 0;box-shadow:0 4px 32px rgba(184,134,42,.1);z-index:300;list-style:none}
+.ddrop a{display:block;padding:.7rem 1.2rem;font-size:.78rem;color:var(--text2);transition:all .2s;text-decoration:none}
+.ddrop a:hover{background:var(--gold-bg);color:var(--gold)}
 body{font-family:'Raleway',sans-serif;background:var(--cream);color:var(--text);overflow-x:hidden;line-height:1.65}
 h1,h2,h3,h4{font-family:'Playfair Display',serif;color:var(--dark)}
 a{text-decoration:none}
@@ -277,7 +285,15 @@ footer{background:var(--dark2);color:var(--cream2);padding:3.5rem 2rem 2rem}
   <a href="#hero" class="nav-logo"><em>VERSÃO</em> DIGITAL</a>
   <ul class="nav-links">
     <li><a href="#sobre">Sobre</a></li>
-    <li><a href="#servicos">Serviços</a></li>
+    <li class="has-drop">
+      <a href="#servicos">Serviços ▾</a>
+      <ul class="ddrop">
+        <li><a href="fotografia.html">📷 Fotografia</a></li>
+        <li><a href="videoclips.html">🎬 Video Clips</a></li>
+        <li><a href="design.html">✏️ Design & Branding</a></li>
+        <li><a href="edicao-video.html">✂️ Edição de Vídeo</a></li>
+      </ul>
+    </li>
     <li><a href="#pacotes">Pacotes</a></li>
     <li><a href="#processo">Processo</a></li>
     <li><a href="#contacto">Contacto</a></li>
@@ -287,7 +303,10 @@ footer{background:var(--dark2);color:var(--cream2);padding:3.5rem 2rem 2rem}
 </nav>
 <div class="mobile-menu" id="mobileMenu">
   <a href="#sobre" onclick="closeMenu()">Sobre Nós</a>
-  <a href="#servicos" onclick="closeMenu()">Serviços</a>
+  <a href="fotografia.html" onclick="closeMenu()">📷 Fotografia</a>
+  <a href="videoclips.html" onclick="closeMenu()">🎬 Video Clips</a>
+  <a href="design.html" onclick="closeMenu()">✏️ Design & Branding</a>
+  <a href="edicao-video.html" onclick="closeMenu()">✂️ Edição de Vídeo</a>
   <a href="#pacotes" onclick="closeMenu()">Pacotes</a>
   <a href="#processo" onclick="closeMenu()">Processo</a>
   <a href="#contacto" onclick="closeMenu()">Contacto</a>
@@ -593,7 +612,7 @@ footer{background:var(--dark2);color:var(--cream2);padding:3.5rem 2rem 2rem}
 
       </div>
 
-      <!-- Formulário com EmailJS -->
+      <!-- Formulário com Web3Forms (geral@versaodigitallda.com) -->
       <div class="form-card">
         <h3>Peça o Seu Orçamento</h3>
         <p>Resposta garantida em até 24 horas em dias úteis.</p>
@@ -622,16 +641,43 @@ footer{background:var(--dark2);color:var(--cream2);padding:3.5rem 2rem 2rem}
           <label>Serviço de Interesse</label>
           <select id="f_servico">
             <option value="">Seleccionar...</option>
-            <option>Pacote Essencial (AOA 150.000)</option>
-            <option>Pacote Crescimento (AOA 350.000)</option>
-            <option>Pacote Híbrido 360° (AOA 600.000)</option>
-            <option>Funil de Vendas & Estratégia Comercial</option>
-            <option>Presença Digital / Site Web</option>
-            <option>Tráfego Pago (Meta Ads)</option>
-            <option>Gestão de Redes Sociais</option>
-            <option>Produção Audiovisual</option>
-            <option>Identidade Visual & Branding</option>
-            <option>Serviço Avulso — a discutir</option>
+            <optgroup label="Pacotes">
+              <option>Pacote Essencial (AOA 150.000)</option>
+              <option>Pacote Crescimento (AOA 350.000)</option>
+              <option>Pacote Híbrido 360° (AOA 600.000)</option>
+            </optgroup>
+            <optgroup label="Fotografia">
+              <option>Fotografia Corporativa</option>
+              <option>Cobertura de Evento / Aniversário</option>
+              <option>Casamento</option>
+              <option>Pedido de Casamento</option>
+              <option>Palestra / Workshop</option>
+            </optgroup>
+            <optgroup label="Video">
+              <option>Video Clip Musical</option>
+              <option>Video Comercial / Institucional</option>
+              <option>VSL — Video Sales Letter</option>
+              <option>Conteúdo para Redes Sociais</option>
+            </optgroup>
+            <optgroup label="Edição de Vídeo">
+              <option>Edição de Vídeo Simples</option>
+              <option>Edição de Vídeo Profissional</option>
+              <option>Pacote Mensal de Edição</option>
+            </optgroup>
+            <optgroup label="Design & Branding">
+              <option>Logótipo Profissional</option>
+              <option>Identidade Visual Completa</option>
+              <option>Brindes Corporativos</option>
+              <option>Design para Impressão</option>
+              <option>Marca Pessoal (Personal Brand)</option>
+            </optgroup>
+            <optgroup label="Marketing Digital">
+              <option>Funil de Vendas & Estratégia</option>
+              <option>Presença Digital / Site Web</option>
+              <option>Tráfego Pago (Meta Ads)</option>
+              <option>Gestão de Redes Sociais</option>
+            </optgroup>
+            <option value="">Outro — a discutir</option>
           </select>
         </div>
         <div class="fgroup">
@@ -811,8 +857,3 @@ function mostrarErroForm(msg){
 
 </body>
 </html>
-
-
-
-
-
